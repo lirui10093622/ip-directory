@@ -1,4 +1,4 @@
-package org.lr.util.ip.test;
+package org.lr.util.ip.directory.test;
 
 import org.lr.util.ip.directory.IpDirectory;
 import org.lr.util.ip.directory.IpDirectoryFactory;
