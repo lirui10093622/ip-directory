@@ -14,7 +14,7 @@ public class IpDirectoryFactory {
 
     public static IpDirectory buildIpDirectory(Set<String> ip) {
         IpDirectoryImpl directory = new IpDirectoryImpl();
-        ip.forEach(u -> directory.add(IpUtil.convert(u)));
+        ip.forEach(u -> directory.add(IpDirectoryParser.parse(u)));
         return directory;
     }
 

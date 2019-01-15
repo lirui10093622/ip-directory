@@ -9,9 +9,9 @@ import org.apache.commons.net.util.SubnetUtils;
  * @time 2018-08-10 14:19:19
  */
 @Slf4j
-class IpUtil {
+class IpDirectoryParser {
 
-    public static IpDirectory convert(String ip) {
+    public static IpDirectory parse(String ip) {
         return isIpSegment(ip) ? parseIpSegment(ip) : new IpAddress(ip);
     }
 
